@@ -1,11 +1,11 @@
-import React, { useCallback, useContext } from 'react'
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import { CartContext } from '../context/CartContext';
+import { useCartContext } from '../context/CartContext';
 
 
 function NaveBar() {
-  const {totalItem}=useContext(CartContext);
+  const {totalItem}=useCartContext();
   return (
     <div>
         <main className='w-[100%] h-18 bg-gray-800 mt-7 flex

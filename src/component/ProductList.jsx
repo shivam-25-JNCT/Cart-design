@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'
-import { CartContext } from '../context/CartContext';
+
+import { useCartContext } from "../context/CartContext";
 function ProductList() {
 
 const products = [
@@ -29,7 +29,7 @@ const products = [
   }
 ];
 
-const {addToCart} =useContext(CartContext);
+const {addToCart} =useCartContext();
   return (
     <div  >
         <main className='shadow-xl min-w-full min-h-92 p-2   rounded-lg  divide-y  divide-gray-400 ml-5 bg-white  mt-4 shadow-2xl ' >

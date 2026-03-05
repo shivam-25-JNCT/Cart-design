@@ -1,5 +1,5 @@
 import { prefix } from '@fortawesome/free-solid-svg-icons';
-import React from 'react';
+import React, { useContext } from 'react';
 import { createContext,useState } from 'react'
 
  export const CartContext=createContext();
@@ -56,4 +56,11 @@ return (
         {children}
     </CartContext.Provider>
 )
+}
+
+//custum hooks 
+
+export function useCartContext(){
+  const cartContext = useContext(CartContext);
+  return cartContext;
 }

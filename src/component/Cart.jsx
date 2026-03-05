@@ -1,9 +1,8 @@
-import React, { useContext } from 'react'
-import { CartContext } from '../context/CartContext'
 
+import { useCartContext } from '../context/CartContext';
 function Cart() {
 
-    const {cart ,removeFromCart,incrementQty,decrementQty,totalPrice} = useContext(CartContext);
+    const {cart ,removeFromCart,incrementQty,decrementQty,totalPrice} = useCartContext();
     
     
 
